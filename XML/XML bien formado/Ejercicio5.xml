@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<arboles>
+  <arbol>
+    <nombrecientifico>Acer monspessulanum</nombrecientifico>
+    <nombrecomun>Arce de Montpellier, Arce menor</nombrecomun>
+    <vegetacion>Caducifolio </vegetacion>
+    <altura>De 6 a 10 metros </altura>
+    <formayestructura> Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante </formayestructura>
+    <colorprimavera>Haz verde brillante, envés verde blanquecino</colorprimavera>
+    <resistenciaheladas>Heladas fuertes (hasta -15ºC)</resistenciaheladas>
+  </arbol>
+  <arbol>
+    <nombrecientifico>Olea europea</nombrecientifico>
+    <nombrecomun> Olivo</nombrecomun>
+    <vegetacion>Perenne</vegetacion>
+    <altura>De 8 a 15 metros</altura>
+    <formayestructura> Copa irregular. Tronco principal irregular con bifurcaciones. Ramaje tortuoso</formayestructura>
+    <colorprimavera>Haz verde oscuro, envés verde plateado </colorprimavera>
+    <resistenciaheladas>Heladas medias (hasta -10ºC) </resistenciaheladas>
+  </arbol>
+  <arbol>
+    <nombrecientifico>Platanus orientalis </nombrecientifico>
+    <nombrecomun>Platano</nombrecomun>
+    <vegetacion>Caducifolio</vegetacion>
+    <altura>De 20 a 25 metros </altura>
+    <formayestructura> Copa ovoidal. Tronco principal recto. Ramaje expandido </formayestructura>
+    <colorprimavera>Haz verde medio, enves verde claro</colorprimavera>
+    <colorotoño>Ocre</colorotoño>
+    <resistenciaheladas>Heladas fuertes (hasta -20ºC)</resistenciaheladas>
+  </arbol>
+  <arbol>
+    <nombrecientifico>Quercus ilex </nombrecientifico>
+    <nombrecomun> Encina</nombrecomun>
+    <vegetacion>Perenne</vegetacion>
+    <altura>En torno a 25 metros</altura>
+    <formayestructura>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</formayestructura>
+    <colorprimavera>lateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado </colorprimavera>
+    <resistenciaheladas>Heladas fuertes (hasta -15ºC)</resistenciaheladas>
+    </arbol>
+</arboles>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hoteles>
+  <hotel nombre="The Roosevelt Hotel">
+    <telefono>+1 212-661-9600</telefono>
+    <direccion>
+      <calle>45th St</calle>
+      <numero>45</numero>
+    </direccion>
+    <ciudad>New York</ciudad>
+    <pais>USA</pais>
+    <numeroestrellas>4</numeroestrellas>
+    <descripcion>Experience the quintessential Manhattan hotel – a taste of old-school New York continually serving guests since the Jazz Age of the 1920s.</descripcion>
+    <numerohabitaciones>
+      <individuales>190</individuales>
+      <dobles>600</dobles>
+      <triples>200</triples>
+      <suites>33</suites>
+    </numerohabitaciones>
+  </hotel>
+    <hotel nombre="Hotel W Barcelonal">
+    <telefono>+34 932 95 28 00</telefono>
+    <direccion>
+      <calle>Plaça Rosa Del Vents</calle>
+      <numero>1</numero>
+    </direccion>
+    <ciudad>Barcelona</ciudad>
+    <pais>España</pais>
+    <numeroestrellas>5</numeroestrellas>
+    <descripcion>Step inside. See for yourself. Designed by world-renowned architect Ricardo Bofill, W Barcelona sets the scene for a spectacular stay.</descripcion>
+    <numerohabitaciones>
+      <individuales>300</individuales>
+      <dobles>400</dobles>
+      <triples>100</triples>
+      <suites>50</suites>
+    </numerohabitaciones>
+  </hotel>
+    <hotel nombre="NH Collection Roma Vittorio Veneto">
+    <telefono>+39 06 84951</telefono>
+    <direccion>
+      <calle>Corso d'Italia</calle>
+      <numero>1</numero>
+    </direccion>
+    <ciudad>Roma</ciudad>
+    <pais>Italia</pais>
+    <numeroestrellas>4</numeroestrellas>
+    <descripcion>The NH Collection Roma Vittorio Veneto hotel is in the heart of Rome.</descripcion>
+    <numerohabitaciones>
+      <individuales>80</individuales>
+      <dobles>100</dobles>
+      <triples>50</triples>
+      <suites>23</suites>
+    </numerohabitaciones>
+  </hotel>
+</hoteles>

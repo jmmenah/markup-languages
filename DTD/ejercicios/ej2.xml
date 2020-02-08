@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persona SYSTEM "ej2.dtd">
+<persona>
+  <nombre>Juan Manuel</nombre>
+  <fecha_de_nacimiento>
+    <dia>27</dia>
+    <mes>07</mes>
+    <año>1996</año>
+  </fecha_de_nacimiento>
+  <ciudad>Torredelcampo</ciudad>
+</persona>

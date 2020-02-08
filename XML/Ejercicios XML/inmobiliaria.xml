@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<viviendas>
+  <venta>
+    <vivienda>
+      <referencia>v01</referencia>
+      <direccion>
+        <calle>Avenida de la Constitucion</calle>
+        <numero>23</numero>
+        <piso>3A</piso>
+        <codigopostal>23640</codigopostal>
+        <poblacion>Torredelcampo</poblacion>
+      </direccion>
+      <tipovivienda>piso</tipovivienda>
+      <precio>150000</precio>
+    </vivienda>
+    <vivienda>
+      <referencia>v02</referencia>
+      <direccion>
+        <calle>Calle Bocanegra</calle>
+        <numero>6</numero>
+        <codigopostal>18010</codigopostal>
+        <poblacion>Granada</poblacion>
+      </direccion>
+      <tipovivienda>casa</tipovivienda>
+      <precio>600000</precio>
+    </vivienda>
+  </venta>
+  <alquiler>
+    <vivienda>
+      <referencia>a01</referencia>
+      <direccion>
+        <calle>Paseo de la Estacion</calle>
+        <numero>23</numero>
+        <piso>2A</piso>
+        <codigopostal>23640</codigopostal>
+        <poblacion>Torredelcampo</poblacion>
+      </direccion>
+      <tipovivienda>piso</tipovivienda>
+      <preciomes>350</preciomes>
+    </vivienda>
+    <vivienda>
+      <referencia>a02</referencia>
+      <direccion>
+        <calle>Avenida de Madrid</calle>
+        <numero>30</numero>
+        <piso>3C</piso>
+        <codigopostal>23003</codigopostal>
+        <poblacion>Jaen</poblacion>
+      </direccion>
+      <tipovivienda>piso</tipovivienda>
+      <preciomes>550</preciomes>
+    </vivienda>
+    <vivienda>
+      <referencia>a03</referencia>
+      <direccion>
+        <calle>Calle Hornillo de Cartuja</calle>
+        <numero>26</numero>
+        <codigopostal>18012</codigopostal>
+        <poblacion>Granada</poblacion>
+      </direccion>
+      <tipovivienda>casa</tipovivienda>
+      <preciomes>850</preciomes>
+    </vivienda>
+  </alquiler>
+</viviendas>

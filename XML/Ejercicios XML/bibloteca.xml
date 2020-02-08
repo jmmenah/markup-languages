@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+  <libro>
+    <titulo>Harry Potter y la piedra filosofal</titulo>
+    <autor>J. K. Rowling</autor>
+    <isbn>9788478884452</isbn>
+    <añopublicacion>1999</añopublicacion>
+    <descripcion>Harry Potter y la piedra filosofal es el primer libro de la serie del joven mago Harry Potter</descripcion>
+  </libro>
+  <libro>
+    <titulo>La caida de los gigantes</titulo>
+    <autor>Ken Follett</autor>
+    <isbn>9788401337635 </isbn>
+    <añopublicacion>2014</añopublicacion>
+    <descripcion>Una gran novela que narra la vida de unas familias americanas, británicas, rusas y alemanas con el trasfondo de la I Guerra Mundial, la Revolución Rusa y los profundos cambios sociales que éstas conllevaron.</descripcion>
+  </libro>
+</libros>

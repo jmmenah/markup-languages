@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<marcadores>
+  <marcador>
+    <nombre>Twitter</nombre>
+    <url>ww.twitter.com</url>
+    <descripcion>red social de microblogging</descripcion>
+  </marcador>
+  <marcador>
+    <nombre>Google Maps</nombre>
+    <url>ww.maps.google.com</url>
+    <descripcion>plataforma de mapas de Google</descripcion>
+  </marcador>
+    <marcador>
+    <nombre>Gmail</nombre>
+    <url>ww.mail.google.com</url>
+    <descripcion>plataforma de correo de Google</descripcion>
+  </marcador>
+    <marcador>
+    <nombre>Amazon</nombre>
+    <url>ww.amazon.com</url>
+    <descripcion>plataforma de compras a traves de internet</descripcion>
+  </marcador>
+    <marcador>
+    <nombre>Wikipedia</nombre>
+    <url>ww.wikipedia.org</url>
+    <descripcion>enciclopedia on-line gratuita</descripcion>
+  </marcador>
+</marcadores>

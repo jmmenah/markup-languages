@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+  <equipo>
+    <nombre>Real Madrid Club de Futbol</nombre>
+    <ciudad>Madrid</ciudad>
+    <entrenador/>
+    <jugadores>
+        <jugador posicion="defensa">
+          <nombre>Sergio Ramos</nombre>
+          <nacionalidad>española</nacionalidad>
+        </jugador>
+        <jugador posicion="delantero">
+          <nombre>Karim Benzema</nombre>
+          <nacionalidad>francesa</nacionalidad>
+        </jugador>
+    </jugadores>
+  </equipo>
+  <equipo>
+    <nombre>Granada Club de Futbol</nombre>
+    <ciudad>Granada</ciudad>
+    <entrenador/>
+    <jugadores>
+        <jugador posicion="portero">
+          <nombre>Rui Silva</nombre>
+          <nacionalidad>portuguesa</nacionalidad>
+        </jugador>
+        <jugador posicion="centrocampista">
+          <nombre>Alvaro Vadillo</nombre>
+          <nacionalidad>española</nacionalidad>
+        </jugador>
+    </jugadores>
+  </equipo>
+</equipos>

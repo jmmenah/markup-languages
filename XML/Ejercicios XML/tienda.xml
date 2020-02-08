@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<articulos>
+  <articulo tipo="zapatillas">
+    <color>negras</color>
+    <marca>adidas</marca>
+    <talla>43</talla>
+    <cantidad>2</cantidad>
+    <precio>50.95</precio>
+  </articulo>
+  <articulo tipo="camiseta">
+    <color>roja</color>
+    <marca>nike</marca>
+    <talla>L</talla>
+    <cantidad>10</cantidad>
+    <precio>24.95</precio>
+  </articulo>
+  <articulo tipo="pantalon">
+    <color>gris</color>
+    <marca>joma</marca>
+    <talla>m</talla>
+    <cantidad>5</cantidad>
+    <precio>29.90</precio>
+  </articulo>
+</articulos>

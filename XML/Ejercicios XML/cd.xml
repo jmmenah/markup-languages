@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cd>
+  <nombreartista fechanacimento="30-04-1980" lugarnacimiento="Madrid">Leiva</nombreartista>
+  <titulo>Nuclear</titulo>
+  <fechacreacion>2019</fechacreacion>
+  <genero>Rock</genero>
+  <canciones>
+    <cancion>
+      <titulo>No te preocupes por mí</titulo>
+      <duracion>3:49</duracion>
+    </cancion>
+    <cancion>
+      <titulo>Nuclear</titulo>
+      <duracion>3:55</duracion>
+    </cancion>
+  </canciones>
+</cd>
