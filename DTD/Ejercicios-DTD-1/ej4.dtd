@@ -1,0 +1,10 @@
+<!ELEMENT Biblioteca (Libro*)>
+<!ELEMENT Libro (Titulo|Autor|Editado)*>
+<!ELEMENT Titulo (#PCDATA)>
+<!ELEMENT Autor (#PCDATA)>
+<!ELEMENT Editado EMPTY>
+
+<!ATTLIST Libro ISBN CDATA #REQUIRED>
+<!ATTLIST Libro recomendar (si|no) #IMPLIED>
+<!ATTLIST Editado editorial CDATA #IMPLIED>
+<!ATTLIST Editado año CDATA #IMPLIED>
