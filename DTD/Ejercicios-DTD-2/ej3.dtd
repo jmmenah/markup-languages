@@ -1,0 +1,8 @@
+<!ELEMENT menu (denominacion,precio,fecha?,plato+)>
+<!ELEMENT denominacion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT plato (entrantes|primero|postre)>
+<!ELEMENT entrantes (#PCDATA)>
+<!ELEMENT primero (#PCDATA)>
+<!ELEMENT postre (#PCDATA)>

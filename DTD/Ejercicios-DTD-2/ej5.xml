@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE facturas SYSTEM "ej5.dtd">
+<facturas>
+  <factura>
+    <nfra>001</nfra>
+    <fecha>02/02/2020</fecha>
+    <cliente>
+      <codigo>77854</codigo>
+    </cliente>
+    <producto>
+      <codpro>2000</codpro>
+      <descripcion>Agua</descripcion>
+      <cantidad>1</cantidad>
+      <precio>0.25€</precio>
+    </producto>
+  </factura>
+  <factura>
+    <nfra>002</nfra>
+    <fecha>02/02/2020</fecha>
+    <cliente>
+      <nif>77358410B</nif>
+      <nombre>Juan Moral Blanca</nombre>
+      <direccion>Calle Llana nº3</direccion>
+    </cliente>
+    <descuento>5%</descuento>
+    <producto>
+      <codpro>2000</codpro>
+      <descripcion>Coca-Cola</descripcion>
+      <cantidad>1</cantidad>
+      <precio>1.5€</precio>
+    </producto>
+  </factura>
+</facturas>

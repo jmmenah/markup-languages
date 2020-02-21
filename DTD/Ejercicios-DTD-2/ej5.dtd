@@ -1,0 +1,16 @@
+<!ELEMENT facturas (factura+)>
+<!ELEMENT factura (nfra,fecha,cliente,descuento?,producto+)>
+<!ELEMENT nfra (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT cliente (codigo|(nif,nombre,direccion))>
+<!ELEMENT descuento (#PCDATA)>
+<!ELEMENT producto (codpro,descripcion,cantidad,precio)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nif (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT codpro (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+
