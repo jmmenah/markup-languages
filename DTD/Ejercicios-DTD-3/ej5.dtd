@@ -1,0 +1,12 @@
+<!ELEMENT entrega (lote+)>
+<!ELEMENT lote (pale+)>
+<!ELEMENT pale (numcajas,contenido,peso,formamanipulacion)>
+<!ELEMENT numcajas (#PCDATA)>
+<!ELEMENT contenido (nombrecomponente,procedencia?,numserie,peso,unidades?)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT formamanipulacion (#PCDATA)>
+<!ELEMENT nombrecomponente (#PCDATA)>
+<!ELEMENT procedencia (pais*)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT numserie (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
