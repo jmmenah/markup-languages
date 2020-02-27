@@ -1,0 +1,16 @@
+<!ELEMENT libro (titulo,disponible,autor,formato,publicacion,precio,descuento,enlacelibro)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT disponible EMPTY>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT formato (#PCDATA)>
+<!ELEMENT publicacion (#PCDATA)>
+<!ELEMENT precio EMPTY>
+<!ELEMENT descuento EMPTY>
+<!ELEMENT enlacelibro EMPTY>
+
+<!ATTLIST disponible tiempo NMTOKEN #REQUIRED>
+<!ATTLIST disponible unidad CDATA #REQUIRED>
+<!ATTLIST precio cantidad NMTOKEN #REQUIRED>
+<!ATTLIST precio moneda CDATA "euro">
+<!ATTLIST descuento cantidad NMTOKEN #REQUIRED>
+<!ATTLIST enlacelibro href CDATA #REQUIRED>

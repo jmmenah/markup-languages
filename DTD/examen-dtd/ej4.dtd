@@ -1,0 +1,25 @@
+<!ELEMENT autoescuela (alumno+,profesor+,coche+)>
+<!ELEMENT alumno (nif,nombre,direccion)>
+<!ELEMENT profesor (nif,nombre,direccion,horario)>
+<!ELEMENT coche (matricula,modelo,marca)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT nif (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT horario (dia+,hora+)>
+<!ELEMENT matricula (#PCDATA)>
+<!ELEMENT modelo (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT hora (#PCDATA)>
+
+<!ATTLIST alumno codigo ID #REQUIRED>
+<!ATTLIST profesor codigo ID #REQUIRED>
+<!ATTLIST coche codigo ID #REQUIRED>
+<!ATTLIST alumno fase (teorico|practicas) #REQUIRED>
+<!ATTLIST alumno profesort IDREF #REQUIRED>
+<!ATTLIST alumno profesorp1 IDREF #REQUIRED>
+<!ATTLIST alumno profesorp2 IDREF #IMPLIED>
+<!ATTLIST alumno profesorp3 IDREF #IMPLIED>
+<!ATTLIST alumno coche IDREF #REQUIRED>
+

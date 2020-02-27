@@ -1,0 +1,15 @@
+<!ELEMENT song (title,composers+,producers+,publiser,artists+)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT composers (composer+)>
+<!ELEMENT producers (producer+)>
+<!ELEMENT publiser (#PCDATA)>
+<!ELEMENT artists (artist+)>
+<!ELEMENT composer (nombre,apellidos)>
+<!ELEMENT producer (nombre,apellidos)>
+<!ELEMENT artist (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+
+<!ATTLIST song length NMTOKEN #REQUIRED>
+<!ATTLIST song anio NMTOKEN #IMPLIED>
+

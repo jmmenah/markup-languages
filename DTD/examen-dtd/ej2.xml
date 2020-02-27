@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "ej2.dtd">
+<catalogo>
+  <producto nombre="cafetera" categoria="mesa" numpart="1" fabrica="Leon" inventario="bajoorden">
+    <especificacion peso="10kg" potencia="50W">Basica</especificacion>
+    <opcion adaptador="opcional">Opcion 1</opcion>
+    <precio moneda="dolares">20</precio>
+    <nota>Seminuevo</nota>
+  </producto>
+  <producto nombre="lavadora">
+    <especificacion potencia="200W">5kg</especificacion>
+    <especificacion potencia="250W">7kg</especificacion>
+    <precio moneda="dolares">180</precio>
+    <precio>175</precio>
+  </producto>
+</catalogo>

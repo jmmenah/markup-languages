@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE autoescuela SYSTEM "ej4.dtd">
+<autoescuela>
+  <alumno codigo="A1" fase="practicas" profesort="P1" profesorp1="P2" coche="C1">
+<nif>78541269B</nif>
+<nombre>Juan Moral</nombre>
+<direccion>Calle Llana 2</direccion>  
+  </alumno>
+  <profesor codigo="P1">
+<nif>45912587N</nif>
+<nombre>Antonio Ruiz</nombre>
+<direccion>Calle Agua 7</direccion>  
+<horario>
+  <dia>Lunes a Viernes</dia>
+  <hora>16-20</hora>
+</horario>
+  </profesor>
+  <profesor codigo="P2">
+<nif>14962574F</nif>
+<nombre>Maria Molina</nombre>
+<direccion>Calle Madrid 4</direccion>
+<horario>
+  <dia>Lunes</dia>
+  <hora>16-20</hora>
+</horario>  
+  </profesor>
+  <coche codigo="C1">
+<matricula>1569JVG</matricula>
+<modelo>Renault</modelo>
+<marca>Megane</marca>  
+  </coche>
+</autoescuela>
