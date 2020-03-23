@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<listaalumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" curso="1999-10-20" xsi:noNamespaceSchemaLocation="ej1.xsd">
+  <!--DNI atributo obligatorio-->
+  <alumno dni="5667545Z">
+    <!--Nombre y ap1 obligatorios-->
+    <nombre>Jose</nombre>
+    <ap1>Sanchez</ap1>
+  </alumno>
+  <alumno dni="5778221D">
+    <nombre>Andres</nombre>
+    <ap1>Ruiz</ap1>
+    <!--Ap2 y edad son optativos-->
+    <ap2>Ruiz</ap2>
+    <!--La edad debe ser positiva-->
+    <edad>25</edad>
+  </alumno>
+</listaalumnos>

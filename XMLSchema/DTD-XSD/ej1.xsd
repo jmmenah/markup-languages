@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="listaalumnos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="alumno" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="nombre"/>
+              <xs:element type="xs:string" name="ap1"/>
+              <xs:element type="xs:string" name="ap2" minOccurs="0"/>
+              <xs:element type="xs:byte" name="edad" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="dni" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:date" name="curso"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
