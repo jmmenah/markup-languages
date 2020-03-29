@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej4.xsd">
+<Biblioteca>
+  <Libro ISBN="_978-84-206-7415-5" recomendar="si">
+    <Titulo>Mi familia y otros animales</Titulo>
+    <Autor>Gerald Durrell</Autor>
+    <Editado editorial="ALIANZA EDITORIAL" año="2010"/>
+  </Libro>
+  <Libro ISBN="_978-84-670-2154-7" recomendar="si">
+    <Titulo>Cantar de mio Cid</Titulo>
+    <Editado editorial="Espasa Calpe" año="2006"/>
+  </Libro>
+  <Libro ISBN="_978-84-667-9295-0">
+    <Titulo>Cuentos de los hermanos Grimm</Titulo>
+    <Autor>Jacob Grimm</Autor>
+    <Autor>Wilhelm Grimm</Autor>
+    <Editado editorial="Anaya"/>
+  </Libro>
+  <Libro ISBN="_978-84-322-2858-2" recomendar="no">
+    <Titulo>Maldito karma</Titulo>
+    <Autor>David Safier</Autor>
+  </Libro>
+</Biblioteca>
