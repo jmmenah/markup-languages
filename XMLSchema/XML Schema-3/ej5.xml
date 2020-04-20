@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<faq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej5.xsd">
+  <info>
+    <titulo>WINDOWS 98? SOLO SI ME OBLIGAN!</titulo>
+    <autor>Fernando Damian Lorenzo Garcia</autor>
+    <email>Fer@yahoo.es</email>
+    <version>1.0</version>
+    <fecha>1995-05-01</fecha>
+  </info>
+  <part>
+    <q>
+      <qtext>¿Por que tengo que instalar W95?</qtext>
+      <a>A mi tambien me parece una buena pregunta.</a>
+    </q>
+    <q>
+      <qtext>Y de que me vale?</qtext>
+      <a>Otra ingeniosa pregunta</a>
+    </q>
+  </part>
+</faq>

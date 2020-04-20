@@ -1,44 +1,51 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
-<xs:simpleType name="rangonum">
-  <xs:restriction base="xs:integer">
-    <xs:minInclusive value="0"/>
-    <xs:maxInclusive value="500"/>
-  </xs:restriction>
-</xs:simpleType>
+  <xs:simpleType name="rangonum">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="500"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="tipodni">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{8}[A-z]"/>
+    </xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="tipoprov">
+    <xs:restriction base="xs:NCName">
+      <xs:enumeration value="Caceres"/>
+      <xs:enumeration value="Badajoz"/>
+    </xs:restriction>
+  </xs:simpleType>
 
-<xs:simpleType name="tipodni">
-  <xs:restriction base="xs:string">
-    <xs:pattern value="\d{8}[A-z]"/>
-  </xs:restriction>
-</xs:simpleType>
 
-
-  <xs:element name="alumno">
+  <xs:element name="alumnos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="nombre" type="xs:string" />
-        <xs:element name="direccion" minOccurs="1" maxOccurs="2">
+        <xs:element name="alumno" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="calle" type="xs:string" />
-              <xs:element name="numero" type="rangonum"/>
-              <xs:element name="ciudad" type="xs:string" />
-              <xs:element name="provincia" type="xs:string" >
-              <xsd:complexType>
-              <xsd:choice>
-                <xsd:element name="coche" type="xsd:string"/>
-                <xsd:element name="moto" type="xsd:string"/>
-              <xsd:choice>
-              </xsd:complexType>
-            </xsd:element>
+              <xs:element name="nombre" type="xs:string"/>
+              <xs:element name="direccion" maxOccurs="2">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="calle" type="xs:string"/>
+                    <xs:element name="numero" type="rangonum"/>
+                    <xs:element name="ciudad" type="xs:string"/>
+                    <xs:element name="provincia" type="tipoprov"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="telefono" type="xs:int" minOccurs="0" maxOccurs="5"/>
             </xs:sequence>
+            <xs:attribute name="dni" type="tipodni"/>
           </xs:complexType>
         </xs:element>
-        <xs:element name="telefono" type="xs:int" minOccurs="0" maxOccurs="5"/>
       </xs:sequence>
-      <xs:attribute name="dni" type="tipodni"/>
     </xs:complexType>
   </xs:element>
 </xs:schema>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="heladeria">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="helado" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+            <xs:choice maxOccurs="unbounded">
+              <xs:sequence>
+                <xs:element name="fresa" minOccurs="0"/>
+                <xs:element name="vainilla" minOccurs="0"/>
+              </xs:sequence>
+            </xs:choice>
+            <xs:element name="chocolate"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
