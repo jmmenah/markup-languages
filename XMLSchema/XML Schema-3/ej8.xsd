@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:simpleType name="discograficas">
+    <xs:restriction base="xs:NCName">
+      <xs:enumeration value="Sony"/>
+      <xs:enumeration value="CBS"/>
+      <xs:enumeration value="SIRE"/>
+      <xs:enumeration value="Otras"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:simpleType name="stock">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+    <xs:simpleType name="texto">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="mes">
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:enumeration value="enero"/>
+        <xs:enumeration value="febrero"/>
+        <xs:enumeration value="marzo"/>
+        <xs:enumeration value="abril"/>
+        <xs:enumeration value="mayo"/>
+        <xs:enumeration value="junio"/>
+        <xs:enumeration value="julio"/>
+        <xs:enumeration value="agosto"/>
+        <xs:enumeration value="septiembre"/>
+        <xs:enumeration value="octubre"/>
+        <xs:enumeration value="noviembre"/>
+        <xs:enumeration value="diciembre"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:attribute>
+  <xs:element name="discos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="grupo" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nombre">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="texto">
+                      <xs:attribute name="nom"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="miembro" maxOccurs="unbounded" type="texto"/>
+              <xs:element name="nacionalidad" type="xs:string" minOccurs="0"/>
+              <xs:choice>
+                <xs:sequence>
+                  <xs:element name="calle" type="texto" minOccurs="0"/>
+                  <xs:element name="localidad" type="texto" minOccurs="0"/>
+                </xs:sequence>
+                <xs:sequence>
+                  <xs:element name="web" type="texto" minOccurs="0"/>
+                  <xs:element name="email" type="texto" minOccurs="0"/>
+                </xs:sequence>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="nom" type="texto"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="disco" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="interprete" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="texto">
+                      <xs:attribute name="nom"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="titulo" type="texto"/>
+              <xs:element name="discografica" type="discograficas" default="CBS"/>
+              <xs:element name="anio">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:int">
+                      <xs:attribute ref="mes"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="stock" type="stock"/>
+            </xs:sequence>
+            <xs:attribute name="precio" type="xs:double"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

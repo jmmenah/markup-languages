@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
   <xs:attribute name="edad">
-  
     <xs:simpleType>
       <xs:restriction base="xs:integer">
         <xs:minInclusive value="16"/>
@@ -9,7 +8,6 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:attribute>
-
   <xs:attribute name="dni">
     <xs:simpleType>
       <xs:restriction base="xs:string">
@@ -20,14 +18,22 @@
   <xs:element name="pagos">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="nombre" type="xs:string" maxOccurs="3" default="A">
+        <xs:element name="nombre" maxOccurs="3" default="A">
           <xs:complexType>
-            <xs:attribute ref="dni"/>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute ref="dni" />
+              </xs:extension>
+            </xs:simpleContent>
           </xs:complexType>
         </xs:element>
-        <xs:element name="fechaNacimiento" type="xs:date">
+        <xs:element name="fechaNacimiento">
           <xs:complexType>
-            <xs:attribute ref="edad"/>
+            <xs:simpleContent>
+              <xs:extension base="xs:date">
+                <xs:attribute ref="edad"/>
+              </xs:extension>
+            </xs:simpleContent>
           </xs:complexType>
         </xs:element>
         <xs:element name="hora" maxOccurs="unbounded" type="xs:string"/>
