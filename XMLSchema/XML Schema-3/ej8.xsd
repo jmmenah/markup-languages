@@ -37,7 +37,14 @@
       </xs:restriction>
     </xs:simpleType>
   </xs:attribute>
-  <xs:element name="discos">
+  
+    <xs:simpleType name="aniolen">
+      <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]*"/>
+        <xs:length value="4"/>
+      </xs:restriction>
+      </xs:simpleType>
+<xs:element name="discos">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="grupo" maxOccurs="unbounded">
@@ -81,12 +88,12 @@
                 </xs:complexType>
               </xs:element>
               <xs:element name="titulo" type="texto"/>
-              <xs:element name="discografica" type="discograficas" default="CBS"/>
-              <xs:element name="anio">
+              <xs:element name="discografica" type="discograficas" default="CBS" minOccurs="0"/>
+              <xs:element name="anio" minOccurs="0">
                 <xs:complexType>
                   <xs:simpleContent>
-                    <xs:extension base="xs:int">
-                      <xs:attribute ref="mes"/>
+                    <xs:extension base="aniolen">
+                      <xs:attribute ref="mes" use="optional"/>
                     </xs:extension>
                   </xs:simpleContent>
                 </xs:complexType>
