@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos [
+ <!ELEMENT articulos (articulo)+>
+ <!ELEMENT articulo (#PCDATA)>
+ <!ATTLIST articulo color CDATA #FIXED "rojo">
+]>
