@@ -1,0 +1,35 @@
+-- Ejercicio 1
+-- 1
+
+Aplicaciones web
+Gestión de bases de datos
+Lenguajes de marcas y sistemas de gestión de información
+Implantación de aplicaciones web
+
+/ies/modulos/modulo/nombre/node()
+
+--2
+
+<nombre>Gestión de bases de datos</nombre>
+<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+<nombre>Implantación de aplicaciones web</nombre>
+
+/ies/modulos/modulo[ciclo="ASIR"]/nombre
+
+--3
+
+<nombre>Aplicaciones web</nombre>
+<nombre>Implantación de aplicaciones web</nombre>
+
+/ies/modulos/modulo[curso=2]/nombre
+
+--4
+
+<nombre>Aplicaciones web</nombre>
+<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+
+/ies/modulos/modulo[horasSemanales<5]/nombre
+
+--5
+
+/ies/modulos/modulo[ciclo=/ies/modulos/modulo[curso=2]/ciclo]/nombre
