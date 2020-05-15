@@ -1,4 +1,5 @@
 -- Ejercicio 1
+
 -- 1
 
 Aplicaciones web
@@ -32,4 +33,153 @@ Implantación de aplicaciones web
 
 --5
 
-/ies/modulos/modulo[ciclo=/ies/modulos/modulo[curso=2]/ciclo]/nombre
+<nombre>Gestión de bases de datos</nombre>
+<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+
+/ies/modulos/modulo[curso=1][ciclo="ASIR"]/nombre
+
+--6
+
+4
+5
+5
+
+/ies/modulos/modulo[horasSemanales>3]/horasSemanales/text()
+
+--Ejercicio 2
+
+--1
+
+<nombre>Aplicaciones web</nombre>
+
+/ies/modulos/modulo[ciclo=/ies/ciclos/ciclo[nombre="Sistemas Microinformáticos y Redes"]/@id]/nombre
+
+--2
+
+<nombre>Administración de Sistemas Informáticos en Red</nombre>
+<nombre>Desarrollo de Aplicaciones Web</nombre>
+
+/ies/ciclos/ciclo[@id=/ies/modulos/modulo[nombre="Lenguajes de marcas y sistemas de gestión de información"]/ciclo/text()]/nombre
+
+--3
+
+<nombre>Gestión de bases de datos</nombre>
+<nombre>Lenguajes de marcas y sistemas de gestión de información</nombre>
+<nombre>Implantación de aplicaciones web</nombre>
+
+/ies/modulos/modulo[ciclo=/ies/ciclos/ciclo[grado="Superior"]/@id]/nombre
+
+--4
+
+<nombre>Aplicaciones web</nombre>
+
+/ies/modulos/modulo[ciclo=/ies/ciclos/ciclo[decretoTitulo/@año=2008]/@id]/nombre
+
+--5
+
+<grado>Superior</grado>
+<grado>Superior</grado>
+
+/ies/ciclos/ciclo[@id=/ies/modulos/modulo[curso=1]/ciclo]/grado
+
+--Ejercicio 3
+
+--1
+
+<peso unidad="g">480</peso>
+<peso unidad="kg">1.8</peso>
+<peso unidad="g">50</peso>
+
+/inventario/producto/peso
+
+--2
+
+480
+1.8
+50
+
+/inventario/producto/peso/text()
+
+--3
+
+<peso unidad="g">50</peso>
+
+ /inventario/producto[last()]/peso
+
+--4
+
+g
+kg
+g
+
+/inventario/producto/peso/@unidad
+
+--5
+
+ codigo="ACD-981"
+
+/inventario/producto[last()-1]/@codigo
+
+--6
+
+<peso unidad="g">480</peso>
+
+/inventario/producto[@codigo="AAA-111"]/peso
+
+--7
+
+<nombre>Teclado</nombre>
+<nombre>Raton</nombre>
+
+/inventario/producto[peso/@unidad="g"]/nombre
+
+--8
+
+ codigo="ACD-981"
+
+/inventario/producto[nombre="Monitor"]/@codigo
+
+--9
+
+ codigo="AAA-111"
+ codigo="ACD-981"
+
+/inventario/producto[ (peso/@unidad="g" and peso/text()>"250") or (peso/@unidad="kg" and peso/text()>"0.25") ]/@codigo
+
+--Ejercicio 4
+
+--1
+
+20000
+
+/listado/fondo[cuentaasociada = "20-A"]/datos/cantidaddepositada/text()
+
+--2
+
+Euros
+Dolares
+
+/listado/fondo/datos/moneda/text()
+
+--3
+
+No da resultado
+
+/listado/cuenta[saldoactual/@moneda = "dolares"]/titular/@dni
+
+ dni="5671001D"
+ dni="39812341C"
+
+/listado/cuenta[saldoactual/@moneda = "euros"]/titular/@dni
+
+--4
+
+<fondo>
+  <cuentaasociada>21-DX</cuentaasociada>
+  <datos>
+    <cantidaddepositada>4800</cantidaddepositada>
+    <moneda>Dolares</moneda>
+  </datos>
+</fondo>
+
+/listado/fondo[datos/cantidaddepositada<5000 and datos/moneda = "Dolares"]
